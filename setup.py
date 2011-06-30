@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = open(os.path.join("cmrs", "theme", "version.txt")).read().strip()
 
 setup(name='cmrs.theme',
       version=version,
