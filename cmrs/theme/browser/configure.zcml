@@ -10,7 +10,7 @@
     and viewlets only within the 'cmrs' theme.
   -->
   <interface
-      interface=".interfaces.IThemeSpecific"
+      interface=".interfaces.ICmrsSpecific"
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
       name="cmrs"
       />
@@ -36,7 +36,7 @@
   <browser:resourceDirectory
       name="cmrs.theme.images"
       directory="images"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.ICmrsSpecific"
       />
 
   <!-- Resource directory for stylesheets
@@ -47,7 +47,7 @@
   <browser:resourceDirectory
       name="cmrs.theme.stylesheets"
       directory="stylesheets"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.ICmrsSpecific"
       />
 
 </configure>

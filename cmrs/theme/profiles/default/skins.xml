@@ -10,7 +10,7 @@
        persistence'.
        -->
 <object name="portal_skins" allow_any="False" cookie_persistence="False"
-   default_skin="cmrs">
+   default_skin="CMRS">
 
  <!-- This list registers the folders that are stored in the skins directory
       of your product (on the filesystem) as Filesystem Directory Views within
@@ -38,7 +38,7 @@
        Note: insert-before (and -after) accepts the value "*" which means
        "all".
        -->
- <skin-path name="cmrs" based-on="Plone Classic Theme">
+ <skin-path name="CMRS" based-on="Plone Classic Theme">
   <layer name="cmrs_theme_custom_images"
      insert-after="custom"/>
   <layer name="cmrs_theme_custom_templates"

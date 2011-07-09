@@ -16,6 +16,16 @@ class TestInstallation(unittest.TestCase):
     def setUp(self):                                
         self.portal = self.layer['portal'] 
 
+    def testBrowserLayerRegistered(self):
+        sm = getSiteManager(self.portal)
+        layers = [o.__name__ for o in registered_layers()]
+        print layers
+        assert 'ICmrsSpecific' in layers
+
     def testSkinLayer(self):
         portal_skins = getattr(self.portal, 'portal_skins')
-        assert 'cmrs' in portal_skins.getSkinSelections()
+        assert 'CMRS' in portal_skins.getSkinSelections()
+
+    def testCurrentSkinLayer(self):
+        current_skin = self.portal.getCurrentSkinName()
+        assert 'CMRS' == current_skin
