@@ -2,7 +2,7 @@ title:string=cmrs's color, font, logo and border defaults
 
 plone_skin:string=cmrs
 
-logoName:string=portal_logo.gif
+logoName:string=kc_logo.gif
 
 fontFamily:string="Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif
 fontBaseSize:string=69%
