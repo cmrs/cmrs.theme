@@ -7,14 +7,16 @@ from plone.app.testing import ploneSite
 from plone.app.testing import applyProfile
 from plone.browserlayer.utils import registered_layers
 
+from Products.CMFCore.utils import getToolByName
+
 from base import CMRS_THEME_INTEGRATION_TESTING
 
 class TestInstallation(unittest.TestCase):
     """Ensure product is properly installed"""
     layer = CMRS_THEME_INTEGRATION_TESTING
 
-    def setUp(self):                                
-        self.portal = self.layer['portal'] 
+    def setUp(self):
+        self.portal = self.layer['portal']
 
     def testBrowserLayerRegistered(self):
         sm = getSiteManager(self.portal)
@@ -29,3 +31,14 @@ class TestInstallation(unittest.TestCase):
     def testCurrentSkinLayer(self):
         current_skin = self.portal.getCurrentSkinName()
         assert 'CMRS' == current_skin
+
+class TestReinstall(unittest.TestCase):
+    """Ensure product can be reinstalled safely"""
+    layer = CMRS_THEME_INTEGRATION_TESTING
+
+    def setUp(self):
+        self.portal = self.layer['portal']
+
+    def testReinstall(self):
+        portal_setup = getToolByName(self.portal, 'portal_setup')
+        portal_setup.runAllImportStepsFromProfile('profile-cmrs.theme:default')
