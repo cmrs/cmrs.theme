@@ -32,6 +32,13 @@ class TestInstallation(unittest.TestCase):
         current_skin = self.portal.getCurrentSkinName()
         assert 'CMRS' == current_skin
 
+    def testSkinLayersInstalled(self):
+        """Test skin layer is installed, and keble layout folder is also installed"""
+        assert 'cmrs_theme' in self.portal.portal_skins.objectIds()
+        assert 'portal_logo.gif' in self.portal.portal_skins.cmrs_theme.objectIds()
+        assert 'keble_default' in self.portal.portal_skins.objectIds()
+        assert 'kc_logo.gif' in self.portal.portal_skins.keble_default.objectIds()
+
 class TestReinstall(unittest.TestCase):
     """Ensure product can be reinstalled safely"""
     layer = CMRS_THEME_INTEGRATION_TESTING
