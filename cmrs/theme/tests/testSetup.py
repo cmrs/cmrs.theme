@@ -20,7 +20,7 @@ class TestInstallation(unittest.TestCase):
         sm = getSiteManager(self.portal)
         layers = [o.__name__ for o in registered_layers()]
         print layers
-        assert 'ICmrsSpecific' in layers
+        assert 'ICmrsTheme' in layers
 
     def testSkinLayer(self):
         portal_skins = getattr(self.portal, 'portal_skins')
