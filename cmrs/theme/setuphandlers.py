@@ -1,11 +1,22 @@
-def setupVarious(context):
+from StringIO import StringIO
 
-    # Ordinarily, GenericSetup handlers check for the existence of XML files.
-    # Here, we are not parsing an XML file, but we use this text file as a
-    # flag to check that we actually meant for this import step to be run.
-    # The file is found in profiles/default.
+from zope.component import getUtility
+
+from plone.app.viewletmanager.interfaces import IViewletSettingsStorage
+
+def hideViewlets(portal, out):
+    """Hide the default viewlets that are overridden
+    """
+    storage = getUtility(IViewletSettingsStorage)
+    hidden_viewlets = storage.getHidden('plone.portalheader', 'CMRS')
+    storage.setHidden('plone.portalheader', 'CMRS', (u'plone.footer', u'plone.colophon', u'plone.site_actions'))
+
+def setupVarious(context):
 
     if context.readDataFile('cmrs.theme_various.txt') is None:
         return
 
-    # Add additional setup code here
+    site = context.getSite()
+    out = StringIO()
+
+    hideViewlets(site, out)
