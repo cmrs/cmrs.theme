@@ -15,35 +15,20 @@
       name="cmrs"
       />
   
-  <!-- Viewlets registration -->
-  <!-- EXAMPLE (UNCOMMENT TO MAKE AVAILABLE):
   <browser:viewlet
-      name="cmrs.someviewlet"
-      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-      class=".viewlets.MyViewlet"
-      layer=".interfaces.IThemeSpecific"
-      permission="zope2.View"
+      name="cmrs.theme.title"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      template="templates/cmrs_title.pt"
+      permission="zope.Public"
+      layer=".interfaces.ICmrsTheme"
       />
-  -->
 
-  <!-- Zope 3 browser resources -->
-
-  <!-- Resource directory for images
-    See cmrs/theme/browser/images/README.txt
-    for more information about registering images as Zope 3 browser
-    resources.
-  -->
   <browser:resourceDirectory
       name="cmrs.theme.images"
       directory="images"
       layer=".interfaces.ICmrsTheme"
       />
 
-  <!-- Resource directory for stylesheets
-    See cmrs/theme/browser/stylesheets/README.txt
-    for more information about registering stylesheets as Zope 3 browser
-    resources.
-  -->
   <browser:resourceDirectory
       name="cmrs.theme.stylesheets"
       directory="stylesheets"

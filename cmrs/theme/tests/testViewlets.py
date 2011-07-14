@@ -41,6 +41,16 @@ class TestViewlets(unittest.TestCase):
         viewlet_names = [v.__name__ for v in manager.viewlets]
         return viewlet_names
 
+    def testCmrsTitle(self):
+        context = self.portal
+        viewlet_names = self.get_viewlet_manager(context, 'plone.portalheader')
+        assert 'cmrs.theme.title' in viewlet_names
+
+    def testOxfordEmblem(self):
+        context = self.portal
+        viewlet_names = self.get_viewlet_manager(context, 'plone.portalheader')
+        assert 'keble.theme.oxfordemblem' not in viewlet_names
+
     def testSearchBox(self):
         context = self.portal
         viewlet_names = self.get_viewlet_manager(context, 'plone.portalheader')

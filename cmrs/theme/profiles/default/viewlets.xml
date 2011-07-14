@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <object>
  <hidden manager="plone.portalheader" skinname="*">
+  <viewlet name="keble.layout.oxfordemblem"/>
   <viewlet name="plone.searchbox"/>
   <viewlet name="plone.global_sections"/>
  </hidden>
