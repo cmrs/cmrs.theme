@@ -1,1 +1,15 @@
-/* Stylesheet for the 'CMRS Theme Package' Plone theme */
+div#portal-top {
+    background-image: url("++resource++cmrs.theme.images/bg_portal_top.gif");
+}
+
+div#portal-header {
+    background-image: url("++resource++cmrs.theme.images/bg_portal_header.gif");
+}
+
+.LSBox {
+    background-image: url("++resource++cmrs.theme.images/searchbox.gif");
+}
+
+div.LSBox input#searchGadget {
+    color: #000000;
+}
