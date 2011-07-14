@@ -1,5 +1,14 @@
 <?xml version="1.0"?>
 <object>
+ <order manager="plone.portalheader" skinname="*">
+  <viewlet name="plone.skip_links"/>
+  <viewlet name="plone.personal_bar"/>
+  <viewlet name="plone.logo"/>
+  <viewlet name="cmrs.theme.title"/>
+  <viewlet name="keble.layout.searchbox"/>
+  <viewlet name="keble.layout.global_sections"/>
+  <viewlet name="keble.layout.sectionbanner"/>
+ </order>
  <hidden manager="plone.portalheader" skinname="*">
   <viewlet name="keble.layout.oxfordemblem"/>
   <viewlet name="plone.searchbox"/>

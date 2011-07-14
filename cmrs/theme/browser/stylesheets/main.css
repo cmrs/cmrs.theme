@@ -13,3 +13,13 @@ div#portal-header {
 div.LSBox input#searchGadget {
     color: #000000;
 }
+
+div#cmrs-title {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+
+div#cmrs-title h1 {
+    color: #FFFFFF;
+}
