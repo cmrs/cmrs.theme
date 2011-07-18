@@ -11,13 +11,9 @@
   <property name="root"/>
  </assignment>
 
- <assignment
-     purge="True"
-     manager="plone.rightcolumn"
-     category="context"
-     key="/"
-     type="oxford.testimonial.browser.portlet"
-     name="Testimonial Carousel">
+ <assignment name="Testimonial Carousel" category="context" key="/"
+     manager="plone.rightcolumn" type="oxford.testimonial.browser.portlet" visible="True">
+  <property name="interval">10</property>
  </assignment>
 
 </portlets>
