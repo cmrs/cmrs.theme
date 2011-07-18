@@ -23,3 +23,20 @@ div#cmrs-title {
 div#cmrs-title h1 {
     color: #FFFFFF;
 }
+
+.portlet {
+    border: 1px solid #3E5197;
+}
+
+.portletHeader,
+.portletFooter
+{
+    background-color: #5675B0;
+    color: white;
+    text-transform: none;
+}
+
+.portletItem {
+    border: 1px solid #3E5197;
+}
+
