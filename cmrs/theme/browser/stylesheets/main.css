@@ -51,3 +51,22 @@ div#cmrs-title h1 {
 .portletItem {
     border: 1px solid #3E5197;
 }
+
+#portal-globalnav {
+    background-color: transparent;
+    margin: 10px;
+}
+
+#portal-globalnav li a {
+    border-style: none;
+}
+
+#portal-globalnav li.selected a {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+#portal-globalnav li a:hover {
+    color: #FFFFFF;
+    border-right: none;
+}
