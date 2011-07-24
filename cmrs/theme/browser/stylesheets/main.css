@@ -28,8 +28,12 @@ div#cmrs-title h1 {
     border: 1px solid #3E5197;
 }
 
-dl.portletNavigationTree {
+.portletNavigationTree {
     border-style: none;
+}
+
+.portletNavigationTree span {
+    color: #3E5197;
 }
 
 .portletNavigationTree .portletItem {
