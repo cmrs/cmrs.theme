@@ -28,6 +28,14 @@ div#cmrs-title h1 {
     border: 1px solid #3E5197;
 }
 
+dl.portletNavigationTree {
+    border-style: none;
+}
+
+.portletNavigationTree .portletItem {
+    border-style: none;
+}
+
 .portletHeader,
 .portletFooter
 {
@@ -39,4 +47,3 @@ div#cmrs-title h1 {
 .portletItem {
     border: 1px solid #3E5197;
 }
-
