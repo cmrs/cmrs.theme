@@ -74,3 +74,21 @@ div#cmrs-title h1 {
 .academic-list {
     padding-left: 45px;
 }
+
+div#portal-footer {
+    background-color: #FFFFFF;
+    border-top: none;
+    border-bottom: 6px solid black;
+    height: auto;
+    padding: 0;
+}
+
+div#footer-links {
+    position: relative;
+    height: 20px;
+    top: 0;
+    left: 0;
+    padding-top: 5px;
+    padding-left: 361.441px;
+    background-color: #EFEDE2;
+}
