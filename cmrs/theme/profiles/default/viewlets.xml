@@ -22,5 +22,6 @@
   <viewlet name="plone.site_actions"/>
   <viewlet name="plone.colophon"/>
   <viewlet name="plone.footer"/>
+  <viewlet name="keble.layout.footer"/>
  </hidden>
 </object>

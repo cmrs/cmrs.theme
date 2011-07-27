@@ -3,12 +3,6 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="cmrs.theme">
 
-  <!-- 'cmrs' Zope 3 browser layer
-    Register views, viewlets and resources for this layer to make sure
-    they only apply to the 'cmrs' theme.
-    You can also use this layer to override default Plone browser views
-    and viewlets only within the 'cmrs' theme.
-  -->
   <interface
       interface=".interfaces.ICmrsTheme"
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
@@ -19,6 +13,15 @@
       name="cmrs.theme.title"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       template="templates/cmrs_title.pt"
+      permission="zope.Public"
+      layer=".interfaces.ICmrsTheme"
+      />
+
+  <browser:viewlet
+      name="cmrs.theme.footer"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class="plone.app.layout.viewlets.common.FooterViewlet"
+      template="templates/cmrs_footer.pt"
       permission="zope.Public"
       layer=".interfaces.ICmrsTheme"
       />
