@@ -6,13 +6,14 @@
   <viewlet name="plone.logo"/>
   <viewlet name="cmrs.theme.title"/>
   <viewlet name="keble.layout.searchbox"/>
-  <viewlet name="keble.layout.global_sections"/>
+  <viewlet name="cmrs.theme.global_sections"/>
   <viewlet name="keble.layout.sectionbanner"/>
  </order>
  <hidden manager="plone.portalheader" skinname="*">
   <viewlet name="keble.layout.oxfordemblem"/>
   <viewlet name="plone.searchbox"/>
   <viewlet name="plone.global_sections"/>
+  <viewlet name="keble.layout.global_sections"/>
  </hidden>
  <hidden manager="plone.abovecontent" skinname="*">
   <viewlet name="plone.path_bar"/>

@@ -61,8 +61,8 @@ class TestViewlets(unittest.TestCase):
     def testGlobalSections(self):
         context = self.portal
         viewlet_names = self.get_viewlet_manager(context, 'plone.portalheader')
-        assert 'keble.layout.global_sections' in viewlet_names
-        print viewlet_names
+        assert 'cmrs.theme.global_sections' in viewlet_names
+        assert 'keble.layout.global_sections' not in viewlet_names
         assert 'plone.global_sections' not in viewlet_names
 
     def testSectionBanner(self):
@@ -73,8 +73,8 @@ class TestViewlets(unittest.TestCase):
     def testFooter(self):
         context = self.portal
         viewlet_names = self.get_viewlet_manager(context, 'plone.portalfooter')
-        assert 'keble.layout.footer' in viewlet_names
-        print viewlet_names
+        assert 'cmrs.theme.footer' in viewlet_names
+        assert 'keble.layout.footer' not in viewlet_names
         assert 'plone.footer' not in viewlet_names
         assert 'plone.colophon' not in viewlet_names
         assert 'plone.site_actions' not in viewlet_names

@@ -18,6 +18,15 @@
       />
 
   <browser:viewlet
+      name="cmrs.theme.global_sections"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class="cmrs.theme.browser.viewlets.GlobalSectionsViewlet"
+      template="templates/cmrs_sections.pt"
+      permission="zope2.View"
+      layer=".interfaces.ICmrsTheme"
+      />
+
+  <browser:viewlet
       name="cmrs.theme.footer"
       manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
       class="plone.app.layout.viewlets.common.FooterViewlet"
