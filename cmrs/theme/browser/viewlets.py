@@ -2,7 +2,11 @@ from zope.component import getMultiAdapter
 
 from Acquisition import aq_inner
 
+from plone.app.layout.navigation.root import getNavigationRoot
+
+from Products.CMFPlone import utils
 from Products.CMFCore.utils import getToolByName
+from Products.CMFPlone.browser.navigation import get_view_url
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets.common import ViewletBase
 
@@ -14,6 +18,22 @@ class GlobalSectionsViewlet(ViewletBase):
         portal_tabs_view = getMultiAdapter((context, self.request),
                                            name='portal_tabs_view')
         self.portal_tabs = portal_tabs_view.topLevelTabs()
+        query = {}
+        rootPath = getNavigationRoot(context)
+        query['path'] = {'query' : rootPath, 'depth' : 1}
+        query['portal_type'] = ['Folder', 'AcademicFolder']
+        query['sort_on'] = 'getObjPositionInParent'
+        query['review_state'] = 'published'
+        portal_catalog = getToolByName(context, 'portal_catalog')
+        results = portal_catalog.searchResults(query)
+        for result in results:
+            id, item_url = get_view_url(result)
+            if id not in ['Members',]:
+                data = {'name' : utils.pretty_title_or_id(context, result),
+                        'id' : result.getId,
+                        'url' : item_url,
+                        'description': result.Description}
+                self.portal_tabs.append(data)
 
         self.selected_tabs = self.selectedTabs(portal_tabs=self.portal_tabs)
         self.selected_portal_tab = self.selected_tabs['portal']
