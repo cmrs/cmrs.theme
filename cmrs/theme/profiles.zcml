@@ -5,9 +5,9 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="cmrs"
+      title="CMRS Policy"
       directory="profiles/default"
-      description='Extension profile for the "cmrs" Plone theme.'
+      description='Policy profile for the CMRS website.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
