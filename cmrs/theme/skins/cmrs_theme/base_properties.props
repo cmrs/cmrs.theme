@@ -2,7 +2,7 @@ title:string=CMRS Theme Package's color, font, logo and border defaults
 
 plone_skin:string=CMRS Theme Package
 
-logoName:string=portal_logo.jpg
+logoName:string=portal_logo.gif
 
 fontFamily:string="Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif
 fontBaseSize:string=69%
