@@ -6,6 +6,11 @@ div#portal-header {
     background-image: url("++resource++cmrs.theme.images/bg_portal_header.gif");
 }
 
+#portal-logo img {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
 .LSBox {
     background-image: url("++resource++cmrs.theme.images/searchbox.gif");
 }
