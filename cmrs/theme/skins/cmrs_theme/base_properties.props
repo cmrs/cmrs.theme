@@ -46,7 +46,7 @@ portalMinWidth:string=70em
 columnOneWidth:string=16em
 columnTwoWidth:string=16em
 
-cmrs_dark_blue:string=#3E5197
+cmrs_dark_blue:string=#102A9C
 cmrs_light_blue:string=#5675B0
 cmrs_red:string=#E20015
 cmrs_yellow:string=#F7F027

@@ -9,6 +9,7 @@ div#portal-header {
 #portal-logo img {
     margin-top: 0px;
     margin-left: 0px;
+    margin-bottom: 0px;
 }
 
 .LSBox {
@@ -30,7 +31,7 @@ div#cmrs-title h1 {
 }
 
 .portlet {
-    border: 1px solid #3E5197;
+    border: 1px solid #122C9D;
 }
 
 .portletNavigationTree {
@@ -38,7 +39,7 @@ div#cmrs-title h1 {
 }
 
 .portletNavigationTree span {
-    color: #3E5197;
+    color: #122C9D;
 }
 
 .portletNavigationTree .portletItem {
@@ -54,7 +55,7 @@ div#cmrs-title h1 {
 }
 
 .portletItem {
-    border: 1px solid #3E5197;
+    border: 1px solid #122C9D;
 }
 
 #portal-globalnav {
