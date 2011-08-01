@@ -7,6 +7,7 @@
    <element value="Document"/>
    <element value="AcademicFolder"/>
    <element value="CourseFolder"/>
+   <element value="SectionFolder"/>
    <element value="TestimonialFolder"/>
  </property>
 </object>
