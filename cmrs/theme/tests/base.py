@@ -18,11 +18,14 @@ class TestCase(PloneSandboxLayer):
         self.loadZCML(package=keble.layout)
         import cmrs.academic
         self.loadZCML(package=cmrs.academic)
+        import cmrs.course
+        self.loadZCML(package=cmrs.course)
         import cmrs.theme
         self.loadZCML(package=cmrs.theme)
 
         # Install product and call its initialize() function
         z2.installProduct(app, 'cmrs.academic')
+        z2.installProduct(app, 'cmrs.course')
         z2.installProduct(app, 'cmrs.theme')
 
         # Note: you can skip this if my.product is not a Zope 2-style
