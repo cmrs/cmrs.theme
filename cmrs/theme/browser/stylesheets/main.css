@@ -30,6 +30,11 @@ div#cmrs-title h1 {
     color: #FFFFFF;
 }
 
+div#section-banner img {
+    height: 180px;
+    width: 930px;
+}
+
 .portlet {
     border: 1px solid #122C9D;
 }
@@ -75,6 +80,11 @@ div#cmrs-title h1 {
 #portal-globalnav li a:hover {
     color: #FFFFFF;
     border-right: none;
+}
+
+body.portaltype-homepage div#portal-breadcrumbs,
+body.portaltype-plone-site div#portal-breadcrumbs {
+    display: block;
 }
 
 .academic-list {
