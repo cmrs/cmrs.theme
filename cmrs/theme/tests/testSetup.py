@@ -39,6 +39,10 @@ class TestInstallation(unittest.TestCase):
         assert 'keble_default' in self.portal.portal_skins.objectIds()
         assert 'kc_logo.gif' in self.portal.portal_skins.keble_default.objectIds()
 
+    def testPortalFactorySetup(self):
+        assert 'SectionFolder' in self.portal.portal_factory.getFactoryTypes()
+        assert 'BannerImage' in self.portal.portal_factory.getFactoryTypes()
+
 class TestReinstall(unittest.TestCase):
     """Ensure product can be reinstalled safely"""
     layer = CMRS_THEME_INTEGRATION_TESTING
