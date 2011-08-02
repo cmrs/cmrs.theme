@@ -23,4 +23,7 @@ BannerImageSchema = ATImageSchema.copy() + Schema((
 
 ))
 
+BannerImageSchema['image'].widget.description = """The image must be 930 pixels wide and 180 pixels tall,
+                                                   otherwise the image will be stretched."""
+
 finalizeATCTSchema(BannerImageSchema)
