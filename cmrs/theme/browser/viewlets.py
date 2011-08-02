@@ -21,7 +21,7 @@ class GlobalSectionsViewlet(ViewletBase):
         query = {}
         rootPath = getNavigationRoot(context)
         query['path'] = {'query' : rootPath, 'depth' : 1}
-        query['portal_type'] = ['Folder', 'AcademicFolder']
+        query['portal_type'] = ['SectionFolder', 'AcademicFolder']
         query['sort_on'] = 'getObjPositionInParent'
         query['review_state'] = 'published'
         portal_catalog = getToolByName(context, 'portal_catalog')
