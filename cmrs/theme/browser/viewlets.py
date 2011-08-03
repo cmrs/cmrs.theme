@@ -17,7 +17,8 @@ class GlobalSectionsViewlet(ViewletBase):
         context = aq_inner(self.context)
         portal_tabs_view = getMultiAdapter((context, self.request),
                                            name='portal_tabs_view')
-        self.portal_tabs = portal_tabs_view.topLevelTabs()
+        portal_tabs = portal_tabs_view.topLevelTabs()
+        self.portal_tabs = portal_tabs[:1]
         query = {}
         rootPath = getNavigationRoot(context)
         query['path'] = {'query' : rootPath, 'depth' : 1}
@@ -34,6 +35,8 @@ class GlobalSectionsViewlet(ViewletBase):
                         'url' : item_url,
                         'description': result.Description}
                 self.portal_tabs.append(data)
+        if len(portal_tabs) > 1:
+            self.portal_tabs.append(portal_tabs[1])
 
         self.selected_tabs = self.selectedTabs(portal_tabs=self.portal_tabs)
         self.selected_portal_tab = self.selected_tabs['portal']
