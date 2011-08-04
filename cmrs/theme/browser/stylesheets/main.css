@@ -39,6 +39,10 @@ div#section-banner img {
     border: 1px solid #122C9D;
 }
 
+#portal-globalnav li a {
+    color: #A0A0A0;
+}
+
 .portletNavigationTree {
     border-style: none;
 }
