@@ -49,6 +49,7 @@
       />
 
   <include package="plone.app.portlets" />
+  <include package="plone.app.contentmenu" />
 
   <plone:portletRenderer
       portlet="plone.app.portlets.portlets.navigation.INavigationPortlet"
@@ -58,7 +59,7 @@
 
   <plone:portlet
       name="cmrs.theme.browser.portlet"
-      interface=".interfaces.ICmrsTheme"
+      interface="..interfaces.ISectionImagePortlet"
       assignment=".portlet.Assignment"
       renderer=".portlet.Renderer"
       addview=".portlet.AddForm"
