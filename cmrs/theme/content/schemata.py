@@ -19,6 +19,10 @@ SectionFolderSchema = ATFolderSchema.copy() + Schema((
 
 ))
 
+SectionImageFolderSchema = ATFolderSchema.copy() + Schema((
+
+))
+
 BannerImageSchema = ATImageSchema.copy() + Schema((
 
 ))
@@ -27,3 +31,12 @@ BannerImageSchema['image'].widget.description = """The image must be 930 pixels 
                                                    otherwise the image will be stretched."""
 
 finalizeATCTSchema(BannerImageSchema)
+
+SectionImageSchema = ATImageSchema.copy() + Schema((
+
+))
+
+SectionImageSchema['image'].widget.description = """The image must be 150 pixels wide and 150 pixels tall,
+                                                   otherwise the image will be stretched."""
+
+finalizeATCTSchema(SectionImageSchema)

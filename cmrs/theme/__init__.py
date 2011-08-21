@@ -13,6 +13,8 @@ def initialize(context):
 
     from content.bannerimage import BannerImage
     from content.sectionfolder import SectionFolder
+    from content.sectionimage import SectionImage
+    from content.sectionimagefolder import SectionImageFolder
 
     content_types, constructors, ftis = atapi.process_types(
         atapi.listTypes(PROJECTNAME),

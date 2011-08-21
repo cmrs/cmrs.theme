@@ -1,23 +1,19 @@
 <?xml version="1.0"?>
-<object name="SectionFolder"
+<object name="SectionImageFolder"
         meta_type="Factory-based Type Information with dynamic views"
         xmlns:i18n="http://xml.zope.org/namespaces/i18n"
         i18n:domain="plone">
- <property name="title" i18n:translate="">Section Folder</property>
+ <property name="title" i18n:translate="">Section Image Folder</property>
  <property name="description" i18n:translate=""></property>
  <property name="content_icon">folder_icon.gif</property>
- <property name="content_meta_type">SectionFolder</property>
+ <property name="content_meta_type">SectionImageFolder</property>
  <property name="product">cmrs.theme</property>
- <property name="factory">addSectionFolder</property>
+ <property name="factory">addSectionImageFolder</property>
  <property name="immediate_view">base_view</property>
  <property name="global_allow">True</property>
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types">
-  <element value="Folder"/>
-  <element value="Document"/>
-  <element value="File"/>
-  <element value="Image"/>
-  <element value="SectionImageFolder"/>
+  <element value="SectionImage"/>
  </property>
  <property name="allow_discussion">False</property>
  <property name="default_view">base_view</property>
