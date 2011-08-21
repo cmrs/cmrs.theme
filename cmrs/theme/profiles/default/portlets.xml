@@ -1,5 +1,16 @@
 <?xml version="1.0"?>
-<portlets>
+<portlets
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="cmrs.theme">
+  <portlet 
+    addview="cmrs.theme.browser.portlet"
+    title="Section Image Carousel"
+    description="A portlet to display a carousel of images."
+    i18n:attributes="title title_section_image_portlet;
+                     description description_section_image_portlet">
+    <for interface="plone.app.portlets.interfaces.IColumn" />
+    <for interface="plone.app.portlets.interfaces.IRightColumn" />
+  </portlet>
 
  <assignment name="navigation" category="context" key="/"
     manager="plone.leftcolumn" type="portlets.Navigation" visible="True">
@@ -13,6 +24,11 @@
 
  <assignment name="Testimonial Carousel" category="context" key="/"
      manager="plone.rightcolumn" type="oxford.testimonial.browser.portlet" visible="True">
+  <property name="interval">10</property>
+ </assignment>
+
+ <assignment name="Section Image Carousel" category="context" key="/"
+     manager="plone.rightcolumn" type="cmrs.theme.browser.portlet" visible="True">
   <property name="interval">10</property>
  </assignment>
 

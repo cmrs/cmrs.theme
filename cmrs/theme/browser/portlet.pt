@@ -1,0 +1,24 @@
+<dl tal:attributes="class string:portlet portletStaticText portletGrey"
+    tal:define="testimonial view/getRandomTestimonial"
+    i18n:domain="oxford.testimonial">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span tal:content="testimonial/Title" />
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem">
+        <div style="text-align: center;" tal:condition="testimonial/getTestimionialImage">
+            <img tal:replace="structure testimonial/tag" />
+        </div>
+        <span tal:content="structure testimonial/getText" />
+    </dd>
+
+    <dd class="portletFooter">
+        <span class="portletBotomLeft"
+            tal:content="testimonial/getStudentName" />
+        <span class="portletBottomRight"></span>
+    </dd>
+
+</dl>
