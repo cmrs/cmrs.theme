@@ -39,7 +39,6 @@ class Renderer(base.Renderer):
 
     def __init__(self, *args):
         base.Renderer.__init__(self, *args)
-        import pdb;pdb.set_trace()
 
         context = aq_inner(self.context)
         portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
@@ -50,19 +49,23 @@ class Renderer(base.Renderer):
         self.typesToShow = portal_state.friendly_types()  
 
         plone_tools = getMultiAdapter((context, self.request), name=u'plone_tools')
-        self.catalog = plone_tools.catalog()
 
     def render(self):
         return self._template()
 
-    def getRandomTestimonial(self):
-        """Returns a random testimonial object"""
-        folder = self.catalog(portal_type='TestimonialFolder')
+    def getRandomImages(self):
+        """Get up to two random images"""
+        folder = self.getFolderContents(portal_type='SectionImageFolder')
         if not folder:
             return
         folder = folder[0].getObject()
-        testimonials = folder.getFolderContents({'portal_type':'Testimonial',})
-        if not testimonials:
+        folder_images = folder.getFolderContents({'portal_type':'SectionImage',})
+        if not folder_images:
             return
+        results = []
+        if len(folder_images) < 3:
+            for image in folder_images:
+                results.append(image.getObject())
+            return results
         random_testimonial = choice(testimonials).getObject()
         return random_testimonial
