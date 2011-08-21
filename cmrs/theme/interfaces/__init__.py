@@ -1,1 +1,1 @@
-# -*- extra stuff goes here -*-
+from portlet import ISectionImagePortlet

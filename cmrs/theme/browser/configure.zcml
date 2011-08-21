@@ -56,4 +56,13 @@
       layer=".interfaces.ICmrsTheme"
       />
 
+  <plone:portlet
+      name="cmrs.theme.browser.portlet"
+      interface=".interfaces.ICmrsTheme"
+      assignment=".portlet.Assignment"
+      renderer=".portlet.Renderer"
+      addview=".portlet.AddForm"
+      editview=".portlet.EditForm"
+      />
+
 </configure>
