@@ -1,6 +1,6 @@
 <dl tal:attributes="class string:portlet portletStaticText portletGrey"
     tal:define="testimonial view/getRandomTestimonial"
-    i18n:domain="oxford.testimonial">
+    i18n:domain="cmrs.theme">
 
     <dt class="portletHeader">
         <span class="portletTopLeft"></span>
