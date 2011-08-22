@@ -50,7 +50,12 @@ class Renderer(base.Renderer):
 
     def getRandomImages(self):
         """Get up to two random images"""
-        folder = self.context.getFolderContents({'portal_type':'SectionImageFolder'})
+        try:
+            section_folder = self.context.getSectionFolder()
+        except AttributeError:
+            # we are not within a section folder so return
+            return
+        folder = section_folder.getFolderContents({'portal_type':'SectionImageFolder'})
         if not folder:
             return
         folder = folder[0].getObject()

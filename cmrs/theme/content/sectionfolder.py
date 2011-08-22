@@ -27,4 +27,8 @@ class SectionFolder(ATFolder):
     def canSetConstrainTypes(self):
         return False
 
+    security.declarePublic('isSectionFolder')
+    def getSectionFolder(self):
+        return self
+
 registerType(SectionFolder, PROJECTNAME)
