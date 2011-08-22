@@ -3,5 +3,7 @@
  <factorytypes>
   <type portal_type="SectionFolder"/>
   <type portal_type="BannerImage"/>
+  <type portal_type="SectionImageFolder"/>
+  <type portal_type="SectionImage"/>
  </factorytypes>
 </object>

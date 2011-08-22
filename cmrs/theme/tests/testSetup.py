@@ -42,6 +42,14 @@ class TestInstallation(unittest.TestCase):
     def testPortalFactorySetup(self):
         assert 'SectionFolder' in self.portal.portal_factory.getFactoryTypes()
         assert 'BannerImage' in self.portal.portal_factory.getFactoryTypes()
+        assert 'SectionImageFolder' in self.portal.portal_factory.getFactoryTypes()
+        assert 'SectionImage' in self.portal.portal_factory.getFactoryTypes()
+
+    def testNavtreePropertiesConfigured(self):
+        pmntq = self.portal.portal_properties.navtree_properties.metaTypesNotToList
+        assert 'BannerImage' in pmntq
+        assert 'SectionImageFolder' in pmntq
+        assert 'SectionImage' in pmntq
 
 class TestReinstall(unittest.TestCase):
     """Ensure product can be reinstalled safely"""
