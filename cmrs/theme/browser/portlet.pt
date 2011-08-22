@@ -1,24 +1,19 @@
 <dl tal:attributes="class string:portlet portletStaticText portletGrey"
-    tal:define="testimonial view/getRandomTestimonial"
+    tal:define="images view/getRandomImages|nothing"
+    tal:condition="images"
     i18n:domain="cmrs.theme">
 
-    <dt class="portletHeader">
-        <span class="portletTopLeft"></span>
-        <span tal:content="testimonial/Title" />
-        <span class="portletTopRight"></span>
-    </dt>
-
-    <dd class="portletItem">
-        <div style="text-align: center;" tal:condition="testimonial/getTestimionialImage">
-            <img tal:replace="structure testimonial/tag" />
-        </div>
-        <span tal:content="structure testimonial/getText" />
-    </dd>
-
-    <dd class="portletFooter">
-        <span class="portletBotomLeft"
-            tal:content="testimonial/getStudentName" />
-        <span class="portletBottomRight"></span>
-    </dd>
-
+    <div tal:repeat="image images"
+         tal:omit-tag="">
+        <dt class="portletHeader" style="text-align: center;">
+            <span class="portletTopLeft"></span>
+            <span tal:content="image/Title" />
+            <span class="portletTopRight"></span>
+        </dt>
+        <dd class="portletItem">
+            <div style="text-align: center;">
+                <img tal:replace="structure python:image.tag(scale='thumb')" />
+            </div>
+        </dd>
+    </div>
 </dl>

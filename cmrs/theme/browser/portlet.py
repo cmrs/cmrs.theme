@@ -45,17 +45,12 @@ class Renderer(base.Renderer):
         self.anonymous = portal_state.anonymous()  # whether or not the current user is Anonymous
         self.portal_url = portal_state.portal_url()  # the URL of the portal object
         
-        # a list of portal types considered "end user" types
-        self.typesToShow = portal_state.friendly_types()  
-
-        plone_tools = getMultiAdapter((context, self.request), name=u'plone_tools')
-
     def render(self):
         return self._template()
 
     def getRandomImages(self):
         """Get up to two random images"""
-        folder = self.getFolderContents(portal_type='SectionImageFolder')
+        folder = self.context.getFolderContents({'portal_type':'SectionImageFolder'})
         if not folder:
             return
         folder = folder[0].getObject()
@@ -67,5 +62,8 @@ class Renderer(base.Renderer):
             for image in folder_images:
                 results.append(image.getObject())
             return results
-        random_testimonial = choice(testimonials).getObject()
-        return random_testimonial
+        results.append(choice(folder_images).getObject())
+        results.append(choice(folder_images).getObject())
+        while results[0] == results[1]:
+            results[1] = choice(folder_images).getObject()
+        return results
