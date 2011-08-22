@@ -24,6 +24,9 @@ class TestCase(PloneSandboxLayer):
         self.loadZCML(package=cmrs.theme)
 
         # Install product and call its initialize() function
+        z2.installProduct(app, 'oxford.testimonial')
+        z2.installProduct(app, 'oxford.homepage')
+        z2.installProduct(app, 'keble.layout')
         z2.installProduct(app, 'cmrs.academic')
         z2.installProduct(app, 'cmrs.course')
         z2.installProduct(app, 'cmrs.theme')
