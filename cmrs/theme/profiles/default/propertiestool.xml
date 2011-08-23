@@ -5,6 +5,9 @@
    <element value="BannerImage"/>
    <element value="SectionImageFolder"/>
    <element value="SectionImage"/>
+   <element value="File"/>
+   <element value="Image"/>
+   <element value="Document"/>
   </property>
  </object>
  <object name="site_properties" meta_type="Plone Property Sheet">

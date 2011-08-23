@@ -50,6 +50,9 @@ class TestInstallation(unittest.TestCase):
         assert 'BannerImage' in pmntq
         assert 'SectionImageFolder' in pmntq
         assert 'SectionImage' in pmntq
+        assert 'File' in pmntq
+        assert 'Image' in pmntq
+        assert 'Document' in pmntq
 
 class TestReinstall(unittest.TestCase):
     """Ensure product can be reinstalled safely"""
