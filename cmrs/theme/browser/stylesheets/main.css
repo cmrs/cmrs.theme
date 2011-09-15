@@ -86,6 +86,15 @@ div#section-banner img {
     border-right: none;
 }
 
+a,
+a:visited,
+#content li a,
+#content li a:visited,
+#content p a,
+#content p a:visited {
+    color: #122C9D;
+}
+
 body.portaltype-homepage div#portal-breadcrumbs,
 body.portaltype-plone-site div#portal-breadcrumbs {
     display: block;
