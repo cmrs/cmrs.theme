@@ -21,7 +21,6 @@ class TestInstallation(unittest.TestCase):
     def testBrowserLayerRegistered(self):
         sm = getSiteManager(self.portal)
         layers = [o.__name__ for o in registered_layers()]
-        print layers
         assert 'ICmrsTheme' in layers
 
     def testSkinLayer(self):

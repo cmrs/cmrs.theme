@@ -55,7 +55,6 @@ class TestViewlets(unittest.TestCase):
         context = self.portal
         viewlet_names = self.get_viewlet_manager(context, 'plone.portalheader')
         assert 'keble.layout.searchbox' in viewlet_names
-        print viewlet_names
         assert 'plone.searchbox' not in viewlet_names
 
     def testGlobalSections(self):
