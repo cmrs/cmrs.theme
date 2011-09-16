@@ -95,6 +95,11 @@ a:visited,
     color: #122C9D;
 }
 
+a.state-published,
+a.state-published:visited {
+    color: #122C9D !important;
+}
+
 body.portaltype-homepage div#portal-breadcrumbs,
 body.portaltype-plone-site div#portal-breadcrumbs {
     display: block;
