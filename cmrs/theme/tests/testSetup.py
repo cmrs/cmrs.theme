@@ -54,6 +54,10 @@ class TestInstallation(unittest.TestCase):
         assert 'Image' in pmntq
         assert 'Document' in pmntq
 
+    def testExternalLinks(self):
+        external = self.portal.portal_properties.site_properties.external_links_open_new_window
+        assert external == 'true'
+
 class TestReinstall(unittest.TestCase):
     """Ensure product can be reinstalled safely"""
     layer = CMRS_THEME_INTEGRATION_TESTING

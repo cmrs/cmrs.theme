@@ -15,5 +15,7 @@
   <property name="default_page_types" type="lines">
    <element value="HomePage"/>
   </property>
+  <property name="external_links_open_new_window"
+     type="string">true</property>
  </object>
 </object>
