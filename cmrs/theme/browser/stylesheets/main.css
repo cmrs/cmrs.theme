@@ -63,6 +63,12 @@ div#section-banner img {
     text-transform: none;
 }
 
+.portletHeader a,
+.portletFooter a
+{
+    color: white !important;
+}
+
 .portletItem {
     border: 1px solid #122C9D;
 }
