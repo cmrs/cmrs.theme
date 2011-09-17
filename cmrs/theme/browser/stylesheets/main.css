@@ -92,6 +92,10 @@ div#section-banner img {
     border-right: none;
 }
 
+ul.navTree li.navTreeCurrentNode a.navTreeCurrentItem span {
+    color: #000000 !important;
+}
+
 a,
 a:visited,
 #content li a,
