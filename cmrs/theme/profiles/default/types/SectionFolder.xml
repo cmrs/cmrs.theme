@@ -17,6 +17,8 @@
   <element value="Document"/>
   <element value="File"/>
   <element value="Image"/>
+  <element value="AcademicFolder"/>
+  <element value="CourseFolder"/>
   <element value="SectionImageFolder"/>
  </property>
  <property name="allow_discussion">False</property>
