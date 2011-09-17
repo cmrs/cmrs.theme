@@ -32,4 +32,8 @@
   <property name="interval">10</property>
  </assignment>
 
+<assignment remove="True" name="events" category="context" key="/"
+    manager="plone.rightcolumn" type="portlets.Events" />
+<assignment remove="True" name="news" category="context" key="/"
+    manager="plone.rightcolumn" type="portlets.News" />
 </portlets>
