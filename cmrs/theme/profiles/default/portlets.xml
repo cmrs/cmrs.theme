@@ -32,8 +32,17 @@
   <property name="interval">10</property>
  </assignment>
 
+ <assignment name="news" category="content_type" key="HomePage"
+    manager="plone.leftcolumn" type="portlets.News" visible="True">
+  <property name="count">5</property>
+  <property name="state">
+   <element>published</element>
+  </property>
+ </assignment>
+
 <assignment remove="True" name="events" category="context" key="/"
     manager="plone.rightcolumn" type="portlets.Events" />
 <assignment remove="True" name="news" category="context" key="/"
     manager="plone.rightcolumn" type="portlets.News" />
+
 </portlets>
