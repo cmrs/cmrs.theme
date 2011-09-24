@@ -96,6 +96,10 @@ ul.navTree li.navTreeCurrentNode a.navTreeCurrentItem span {
     color: #000000 !important;
 }
 
+#portal-breadcrumbs a {
+    color: #122C9D;
+}
+
 a,
 a:visited,
 #content li a,
