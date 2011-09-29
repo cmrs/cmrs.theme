@@ -51,7 +51,6 @@ class TestInstallation(unittest.TestCase):
         assert 'SectionImage' in pmntq
         assert 'File' in pmntq
         assert 'Image' in pmntq
-        assert 'Document' in pmntq
 
     def testExternalLinks(self):
         external = self.portal.portal_properties.site_properties.external_links_open_new_window
