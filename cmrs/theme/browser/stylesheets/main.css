@@ -43,6 +43,24 @@ div#section-banner img {
     color: #A0A0A0;
 }
 
+ul.navTreeLevel0 li.navTreeTopNode {
+    background-color: #FFFFFF;
+}
+
+.portletItem ul.navTree li.navTreeTopNode a {
+    color: #122C9D !important;
+    padding: 11px 11px 2px !important;
+    text-align: center;
+}
+
+ul.navTreeLevel0 li.navTreeItem.navTreeTopNode a:hover, dd.portletItem li.navTreeItem.navTreeTopNode a:hover {
+    background-color: #FFFFFF;
+}
+
+.portletItem ul.navTree li.navTreeTopNode a.navTreeCurrentItem {
+    color: #122C9D !important;
+}
+
 .portletNavigationTree {
     border-style: none;
 }
