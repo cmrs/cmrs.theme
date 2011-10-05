@@ -35,6 +35,11 @@ div#section-banner img {
     width: 930px;
 }
 
+#portal-column-two,
+#portal-column-one {
+    width: 225px;
+}
+
 .portlet {
     border: 1px solid #122C9D;
 }
