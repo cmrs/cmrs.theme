@@ -57,6 +57,12 @@
       layer=".interfaces.ICmrsTheme"
       />
 
+  <plone:portletRenderer
+    portlet="plone.app.portlets.portlets.news.INewsPortlet"
+    template="templates/cmrs_news.pt"
+    layer=".interfaces.ICmrsTheme"
+    />
+
   <plone:portlet
       name="cmrs.theme.browser.portlet"
       interface="..interfaces.ISectionImagePortlet"
