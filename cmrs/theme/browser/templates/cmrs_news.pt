@@ -1,7 +1,3 @@
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:tal="http://xml.zope.org/namespaces/tal"
-      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      tal:omit-tag="">
 <dl class="portlet portletNews"
     i18n:domain="plone">
 
@@ -19,21 +15,27 @@
                                 getIcon nocall:plone_view/getIcon;"
                     tal:repeat="obj view/published_news_items">
     <dd tal:define="oddrow repeat/obj/odd;
-                    item_icon python:getIcon(obj);"
+                    item_icon python:getIcon(obj);
+                    object obj/getObject"
          tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
-
+        <h4>
         <a href=""
            class="tile"
            tal:attributes="href obj/getURL;
                            title obj/Description">
             <img tal:replace="structure item_icon/html_tag" />
-            <span tal:replace="obj/pretty_title_or_id">
-            Plone 2.1 announced!
-            </span>
+            <span tal:replace="obj/pretty_title_or_id" />
          </a>
-            <span class="portletItemDetails"
-                  tal:content="python:toLocalizedTime(obj.Date)">May 5</span>
-        
+         </h4>
+         <div style="float:right;">
+             <img tal:condition="object/getImage" tal:replace="structure python:object.tag(scale='tile')" />
+            </div>
+         <div tal:define="tansform_tool nocall:context/portal_transforms" 
+             tal:content="python:tansform_tool.convert('html_to_text', object.getText()).getData()[:90] + '...'" />
+         <div  class="more-link">
+             <a tal:attributes="href obj/getURL;"
+                tal:content="string:more ..." />
+         </div>
     </dd>
     </tal:newsitems>
 
@@ -54,4 +56,3 @@
     </dd>
     </tal:block>
 </dl>
-</html>
