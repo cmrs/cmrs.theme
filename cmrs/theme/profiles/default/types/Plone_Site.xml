@@ -10,5 +10,6 @@
    <element value="CourseFolder"/>
    <element value="SectionFolder"/>
    <element value="TestimonialFolder"/>
+   <element value="SectionImageFolder"/>
  </property>
 </object>
