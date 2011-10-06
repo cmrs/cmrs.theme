@@ -12,7 +12,7 @@
         </dt>
         <dd class="portletItem">
             <div style="text-align: center;">
-                <img tal:replace="structure python:image.tag(scale='thumb')" />
+                <img tal:replace="structure python:image.tag(scale='portlet')" />
             </div>
         </dd>
     </div>

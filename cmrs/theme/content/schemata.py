@@ -36,4 +36,5 @@ SectionImageSchema = ATImageSchema.copy() + Schema((
 
 ))
 
+SectionImageSchema['image'].sizes['portlet'] = (191, 10000)
 finalizeATCTSchema(SectionImageSchema)
