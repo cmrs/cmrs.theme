@@ -22,13 +22,13 @@
   <property name="root"/>
  </assignment>
 
- <assignment name="Testimonial Carousel" category="context" key="/"
-     manager="plone.rightcolumn" type="oxford.testimonial.browser.portlet" visible="True">
+ <assignment name="Section Image Carousel" category="context" key="/"
+     manager="plone.rightcolumn" type="cmrs.theme.browser.portlet" visible="True">
   <property name="interval">10</property>
  </assignment>
 
- <assignment name="Section Image Carousel" category="context" key="/"
-     manager="plone.rightcolumn" type="cmrs.theme.browser.portlet" visible="True">
+ <assignment name="Testimonial Carousel" category="context" key="/"
+     manager="plone.rightcolumn" type="oxford.testimonial.browser.portlet" visible="True">
   <property name="interval">10</property>
  </assignment>
 
