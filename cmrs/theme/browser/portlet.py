@@ -7,6 +7,7 @@ from zope.interface import implements
 from plone.app.portlets.portlets import base
 from plone.memoize.instance import memoize
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone import PloneMessageFactory as _
 
 from cmrs.theme.interfaces import ISectionImagePortlet
@@ -54,6 +55,11 @@ class Renderer(base.Renderer):
             section_folder = self.context.getSectionFolder()
         except AttributeError:
             # we are not within a section folder so return
+            section_folder = None
+        if self.context.portal_type == 'HomePage':
+            # if we are the homepage, get the portal root
+            section_folder = getToolByName(self.context, 'portal_url').getPortalObject()
+        if not section_folder:
             return
         folder = section_folder.getFolderContents({'portal_type':'SectionImageFolder'})
         if not folder:
