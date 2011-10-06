@@ -43,6 +43,12 @@
       />
 
   <browser:resourceDirectory
+      name="cmrs.theme.javascripts"
+      directory="javascripts"
+      layer=".interfaces.ICmrsTheme"
+      />
+
+  <browser:resourceDirectory
       name="cmrs.theme.stylesheets"
       directory="stylesheets"
       layer=".interfaces.ICmrsTheme"

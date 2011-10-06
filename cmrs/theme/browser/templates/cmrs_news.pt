@@ -27,7 +27,7 @@
             <span tal:replace="obj/pretty_title_or_id" />
          </a>
          </h4>
-         <div style="float:right;">
+         <div class="cmrs-news" style="float:right;">
              <img tal:condition="object/getImage" tal:replace="structure python:object.tag(scale='tile')" />
             </div>
          <div tal:define="tansform_tool nocall:context/portal_transforms" 

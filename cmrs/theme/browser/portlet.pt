@@ -11,7 +11,7 @@
             <span class="portletTopRight"></span>
         </dt>
         <dd class="portletItem">
-            <div style="text-align: center;">
+            <div class="portlet-image" style="text-align: center;">
                 <img tal:replace="structure python:image.tag(scale='portlet')" />
             </div>
         </dd>
