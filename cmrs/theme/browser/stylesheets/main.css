@@ -127,8 +127,14 @@ a:visited,
 #content li a,
 #content li a:visited,
 #content p a,
-#content p a:visited {
+#content p a:visited,
+div.more-link a,
+div.more-link a:visited
+{
     color: #122C9D;
+}
+div.more-link a {
+    background-image: none;
 }
 
 a.state-published,
