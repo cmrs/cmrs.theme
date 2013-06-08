@@ -5,9 +5,9 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="CMRS Policy"
+      title="CMRS Theme"
       directory="profiles/default"
-      description='Policy profile for the CMRS website.'
+      description='Theme for the CMRS website.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
