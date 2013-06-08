@@ -36,5 +36,15 @@ SectionImageSchema = ATImageSchema.copy() + Schema((
 
 ))
 
+SectionImageSchema['image'].sizes = {
+    'large': (768, 768),
+    'preview': (400, 400),
+    'mini': (200, 200),
+    'thumb': (128, 128),
+    'tile': (64, 64),
+    'icon': (32, 32),
+    'listing': (16, 16),
+}
+
 SectionImageSchema['image'].sizes['portlet'] = (191, 10000)
 finalizeATCTSchema(SectionImageSchema)
