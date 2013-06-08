@@ -6,12 +6,6 @@
     <div class="cell width-full position-0">
 
         <div id="portal-footer">
-            <div>
-                <a href="http://www.the-bac.org/" target="_blank">
-                    <img width="314px" height="227px"
-                        tal:attributes="src string:$portal_url/++resource++cmrs.theme.images/bac_full_logo.gif" />
-                </a>
-            </div>
             <div id="footer-links">
                 <div class="footer-link">
                     <a href="#" tal:attributes="href string:${portal_url}/sitemap">site map</a>

@@ -32,6 +32,10 @@
   <property name="interval">10</property>
  </assignment>
 
+ <assignment name="Accreditation Logo" category="context" key="/"
+     manager="plone.rightcolumn" type="cmrs.content.browser.portlet.accreditation" visible="True">
+ </assignment>
+
  <assignment name="news" category="content_type" key="HomePage"
     manager="plone.leftcolumn" type="portlets.News" visible="True">
   <property name="count">5</property>
