@@ -30,9 +30,8 @@ div#cmrs-title h1 {
     color: #FFFFFF;
 }
 
-div#section-banner img {
+.carousel img {
     height: 180px;
-    width: 930px;
 }
 
 #portal-column-two,

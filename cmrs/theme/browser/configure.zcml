@@ -28,6 +28,14 @@
       />
 
   <browser:viewlet
+      name="Products.Carousel.viewlet"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class="Products.Carousel.browser.viewlet.CarouselViewlet"
+      permission="zope2.View"
+      layer=".interfaces.ICmrsTheme"
+      />
+
+  <browser:viewlet
       name="cmrs.theme.footer"
       manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
       class="plone.app.layout.viewlets.common.FooterViewlet"
