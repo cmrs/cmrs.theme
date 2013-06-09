@@ -40,6 +40,14 @@ div#cmrs-title h1 {
     margin: 0.5em 1.5em 0;
 }
 
+.documentActions ul {
+    margin: 0;
+}
+
+.documentActions li {
+    background-color: black;
+}
+
 .carousel img {
     height: 180px;
 }
