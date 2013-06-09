@@ -12,6 +12,10 @@ div#portal-header {
     margin-bottom: 0px;
 }
 
+div#portal-searchbox {
+    padding-right: 12em;
+}
+
 .LSBox {
     background-image: url("++resource++cmrs.theme.images/searchbox.gif");
 }
@@ -28,6 +32,12 @@ div#cmrs-title {
 
 div#cmrs-title h1 {
     color: #FFFFFF;
+}
+
+.documentActions {
+    float: right;
+    font-size: 130%;
+    margin: 0.5em 1.5em 0;
 }
 
 .carousel img {
