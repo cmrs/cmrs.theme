@@ -37,7 +37,7 @@ div#cmrs-title h1 {
 .documentActions {
     float: right;
     font-size: 130%;
-    margin: 0.5em 1.5em 0;
+    margin-top: 0.5em;
 }
 
 .documentActions ul {
@@ -46,6 +46,10 @@ div#cmrs-title h1 {
 
 .documentActions li {
     background-color: black;
+}
+
+.documentActions li  a {
+    color: white;
 }
 
 .carousel img {
