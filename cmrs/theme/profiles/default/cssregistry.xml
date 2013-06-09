@@ -29,4 +29,10 @@
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression=""/>
 
+ <stylesheet title="fontawesome" applyPrefix="False" authenticated="False"
+    bundle="" cacheable="False" compression="none" conditionalcomment=""
+    cookable="False" enabled="True" expression=""
+    id="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css"
+    media="" rel="stylesheet" rendering="import"/>
+
 </object>
