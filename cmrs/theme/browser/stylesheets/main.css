@@ -177,3 +177,16 @@ div#footer-links {
 .homepage#portal-column-two .visualPadding {
     padding-top: 2em;
 }
+
+.collapsedHeading {
+    cursor: hand;
+    cursor: pointer;
+}
+ 
+.collapsedHeading.collapsed:before {
+    content: "▶ ";
+}
+ 
+.collapsedHeading:before {
+    content: "▼ ";
+}

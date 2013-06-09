@@ -6,3 +6,12 @@ jq(document).ready(function() {
             urlreplace: '/image_large'
         });
 });
+
+jq(document).ready(function() {
+	$(".collapsedHeading.collapsed").next().hide();
+ 
+	$(".collapsedHeading").click(function() {
+	  $(this).next().slideToggle("fast");
+	  $(this).toggleClass("collapsed");
+	});
+});
