@@ -1,5 +1,5 @@
 div#portal-top {
-    background-image: url("++resource++cmrs.theme.images/bg_portal_top.gif");
+    background-image: url("++resource++cmrs.theme.images/bg_portal_header.gif");
 }
 
 div#portal-header {
@@ -13,7 +13,7 @@ div#portal-header {
 }
 
 div#portal-searchbox {
-    padding-right: 10em;
+    padding-right: 11em;
 }
 
 .LSBox {
@@ -22,6 +22,12 @@ div#portal-searchbox {
 
 div.LSBox input#searchGadget {
     color: #000000;
+}
+
+input.searchButton {
+    background: none;
+    font-size: 2em;
+    color: white;
 }
 
 div#cmrs-title {
@@ -45,7 +51,7 @@ div#cmrs-title h1 {
 }
 
 .documentActions li {
-    background-color: black;
+    background-color: #122C9D;
 }
 
 .documentActions li  a {
