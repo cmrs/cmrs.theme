@@ -20,6 +20,7 @@
   <element value="AcademicFolder"/>
   <element value="CourseFolder"/>
   <element value="SectionImageFolder"/>
+  <element value="TestimonialFolder"/>
  </property>
  <property name="allow_discussion">False</property>
  <property name="default_view">base_view</property>
