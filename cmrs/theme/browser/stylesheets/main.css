@@ -58,6 +58,10 @@ div#cmrs-title h1 {
     color: white;
 }
 
+#portal-globalnav {
+    border-bottom: 3px solid #122C9D;
+}
+
 .carousel img {
     height: 180px;
 }
