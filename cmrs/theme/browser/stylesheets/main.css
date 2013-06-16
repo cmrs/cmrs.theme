@@ -28,6 +28,7 @@ input.searchButton {
     background: none;
     font-size: 2em;
     color: white;
+    border: none;
 }
 
 div#cmrs-title {
