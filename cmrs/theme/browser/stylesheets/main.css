@@ -13,7 +13,7 @@ div#portal-header {
 }
 
 div#portal-searchbox {
-    padding-right: 11em;
+    margin-right: 7em;
 }
 
 .LSBox {
@@ -53,6 +53,8 @@ div#cmrs-title h1 {
 
 .documentActions li {
     background-color: #122C9D;
+    margin: 0.5em 0;
+    padding: 0;
 }
 
 .documentActions li  a {
