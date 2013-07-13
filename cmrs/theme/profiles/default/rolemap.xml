@@ -37,11 +37,6 @@
         <role name="Manager" />
         <role name="Administrator" />
     </permission>
-    <permission name="OxfordHomepage: Add HomePage"
-                acquire="False">
-        <role name="Manager" />
-        <role name="Administrator" />
-    </permission>
     <permission name="OxfordTestimonial: Add Testimonial"
                 acquire="False">
         <role name="Manager" />
