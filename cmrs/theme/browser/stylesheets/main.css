@@ -249,3 +249,7 @@ div#footer-links {
 .course-description {
     padding-bottom: 0.5em;
 }
+
+#tutorial-list {
+    margin-left: 2em;
+}
