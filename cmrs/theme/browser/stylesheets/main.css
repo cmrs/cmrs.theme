@@ -245,3 +245,7 @@ div#footer-links {
 	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#0101a9', endColorstr='#7474b0',GradientType=0 );
 
 }
+
+.course-description {
+    padding-bottom: 0.5em;
+}
