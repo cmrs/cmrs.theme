@@ -20,7 +20,7 @@
   <object name="linkedin" meta_type="CMF Action" i18n:domain="cmrs.theme">
    <property name="title" i18n:translate="">LinkedIn</property>
    <property name="description" i18n:translate="">Follow us on LinkedIn</property>
-   <property name="url_expr">string:http://www.linkedin.com/groups?gid=4325841</property>
+   <property name="url_expr">string:http://www.linkedin.com/profile/view?id=21440423&trk=nav_responsive_tab_profile</property>
    <property name="link_target"></property>
    <property name="icon_expr"></property>
    <property name="available_expr"></property>
