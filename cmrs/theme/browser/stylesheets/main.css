@@ -74,10 +74,6 @@ div#cmrs-title h1 {
     width: 225px;
 }
 
-.portlet {
-    border: 1px solid #122C9D;
-}
-
 #portal-globalnav li a {
     color: #A0A0A0;
 }
@@ -123,10 +119,6 @@ ul.navTreeLevel0 li.navTreeItem.navTreeTopNode a:hover, dd.portletItem li.navTre
 .portletFooter a
 {
     color: white !important;
-}
-
-.portletItem {
-    border: 1px solid #122C9D;
 }
 
 #portal-globalnav {
