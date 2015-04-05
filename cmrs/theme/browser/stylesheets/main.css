@@ -52,7 +52,7 @@ div#cmrs-title h1 {
 }
 
 .documentActions li {
-    background-color: #122C9D;
+    background-color: #992017;
     margin: 0.5em 0;
     padding: 0;
 }
@@ -110,7 +110,7 @@ ul.navTreeLevel0 li.navTreeItem.navTreeTopNode a:hover, dd.portletItem li.navTre
 .portletHeader,
 .portletFooter
 {
-    background-color: #122C9D;
+    background-color: #992017;
     color: white;
     text-transform: none;
 }
