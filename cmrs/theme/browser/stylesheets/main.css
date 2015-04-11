@@ -214,11 +214,11 @@ div#footer-links {
     cursor: hand;
     cursor: pointer;
 }
- 
+
 .collapsedHeading.collapsed:before {
     content: "▶ ";
 }
- 
+
 .collapsedHeading:before {
     content: "▼ ";
 }
@@ -246,6 +246,10 @@ div#footer-links {
 
 .course-description {
     padding-bottom: 0.5em;
+}
+
+.read-more a {
+    float: right;
 }
 
 #tutorial-list {
