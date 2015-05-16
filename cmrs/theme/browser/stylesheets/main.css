@@ -52,7 +52,7 @@ div#cmrs-title h1 {
 }
 
 .documentActions li {
-    background-color: #122C9D;
+    background-color: #992017;
     margin: 0.5em 0;
     padding: 0;
 }
@@ -74,10 +74,6 @@ div#cmrs-title h1 {
     width: 225px;
 }
 
-.portlet {
-    border: 1px solid #122C9D;
-}
-
 #portal-globalnav li a {
     color: #A0A0A0;
 }
@@ -87,7 +83,7 @@ ul.navTreeLevel0 li.navTreeTopNode {
 }
 
 .portletItem ul.navTree li.navTreeTopNode a {
-    color: #122C9D !important;
+    color: #992017 !important;
     padding: 11px 11px 2px !important;
 }
 
@@ -95,8 +91,9 @@ ul.navTreeLevel0 li.navTreeItem.navTreeTopNode a:hover, dd.portletItem li.navTre
     background-color: #FFFFFF;
 }
 
-.portletItem ul.navTree li.navTreeTopNode a.navTreeCurrentItem {
-    color: #122C9D !important;
+.portletItem ul.navTree li.navTreeTopNode a.navTreeCurrentItem,
+.portletItem ul.navTreeLevel0 li.navTreeItem a span {
+    color: #992017 !important;
 }
 
 .portletNavigationTree {
@@ -114,7 +111,7 @@ ul.navTreeLevel0 li.navTreeItem.navTreeTopNode a:hover, dd.portletItem li.navTre
 .portletHeader,
 .portletFooter
 {
-    background-color: #122C9D;
+    background-color: #992017;
     color: white;
     text-transform: none;
 }
@@ -123,10 +120,6 @@ ul.navTreeLevel0 li.navTreeItem.navTreeTopNode a:hover, dd.portletItem li.navTre
 .portletFooter a
 {
     color: white !important;
-}
-
-.portletItem {
-    border: 1px solid #122C9D;
 }
 
 #portal-globalnav {
@@ -149,7 +142,7 @@ ul.navTreeLevel0 li.navTreeItem.navTreeTopNode a:hover, dd.portletItem li.navTre
 }
 
 ul.navTree li.navTreeCurrentNode a.navTreeCurrentItem span {
-    color: #000000 !important;
+    color: #992017 !important;
 }
 
 #portal-breadcrumbs a {
@@ -167,6 +160,11 @@ div.more-link a:visited
 {
     color: #122C9D;
 }
+
+#content h1 {
+    color: #992017;
+}
+
 div.more-link a {
     background-image: none;
 }
@@ -216,11 +214,11 @@ div#footer-links {
     cursor: hand;
     cursor: pointer;
 }
- 
+
 .collapsedHeading.collapsed:before {
     content: "▶ ";
 }
- 
+
 .collapsedHeading:before {
     content: "▼ ";
 }
@@ -248,6 +246,10 @@ div#footer-links {
 
 .course-description {
     padding-bottom: 0.5em;
+}
+
+.read-more a {
+    float: right;
 }
 
 #tutorial-list {
